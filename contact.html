@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<title>Contact Page</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+	<!-- Google Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500' rel='stylesheet'
+		type='text/css'>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+	<!-- Main styles -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contact-page" data-page="regular">
+	<!-- Preloader -->
+	<div id="preloader">
+		<span class="preloader-ani"></span>
+	</div>
+
+	<div id="wrapper">
+		<!-- Head, logo & navigation -->
+		<header id="header" class="container-fluid">
+			<div class="container">
+				<nav class="navbar">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+							class="navbar-toggle collapsed" type="button"><span></span></button>
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img srcset="images/logo@2x.png 2x" src="images/logo.png" width="143" height="45"
+									alt="Jennifer"></a>
+						</div>
+					</div>
+					<!-- Main navigation -->
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="index.html" data-title="Work" data-subtitle="Latest projects">Work</a>
+							</li>
+							<li>
+								<a href="about.html" data-title="About" data-subtitle="A few factoids about me">About</a>
+							</li>
+							<li>
+								<a href="contact.html" data-title="Hello" data-subtitle="Hi there!">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav> <!-- ./Main navigation -->
+			</div>
+		</header>
+
+		<!-- Main content -->
+		<main id="main">
+			<!-- Page head/intro title & subtitle -->
+			<div class="container mar-btm-md">
+				<div class="intro col-md-6 col-md-offset-6">
+					<p>Let's connect! Submit your information below and I'll be in touch as soon as possible.</p>
+				</div>
+			</div>
+
+			<!-- Contact form -->
+			<div class="container contact-form mar-btm-xlg">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6">
+						<form class="validate-form">
+							<div class="row">
+								<div class="input-row col-md-6">
+									<label for="name">Name</label>
+									<input type="text" class="form-control required-field" id="name" placeholder="Name" required>
+								</div>
+								<div class="input-row col-md-6">
+									<label for="mail">Email address</label>
+									<input type="email" class="form-control required-email" id="mail" placeholder="Email" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-row col-md-6">
+									<label for="phone">Phone</label>
+									<input type="tel" class="form-control required-number" id="phone" placeholder="Phone Number" required>
+								</div>
+								<div class="input-row col-md-6">
+									<label for="topic">Topic</label>
+									<select id="topic" class="form-control required-select">
+										<option>Select</option>
+										<option>Project in process</option>
+										<option>New Project</option>
+										<option>General Queries</option>
+										<option>Say Hello</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-row col-md-12">
+									<label for="message">Comment</label>
+									<textarea id="message" cols="30" rows="10" placeholder="Say Hello!"
+										class="form-control required-field" required></textarea>
+								</div>
+								<div id="submit-btn">
+									<input type="submit" value="send">
+									<i class="arrow right-arrow"></i>
+								</div>
+							</div>
+						</form>
+						<small id="msg-submit-form" class="form-success hidde">I'll be in touch as soon as possible. Thank
+							you!</small>
+					</div>
+				</div>
+			</div>
+			<!-- ./Contact form -->
+
+			<!-- #/main content area -->
+
+			<!-- Footer area -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 text-center">
+							<p>&copy;2020 - Jennifer W.</p>
+							<ul class="list-inline social-networks">
+								<li><a href="https://www.linkedin.com/in/jennifer-walason/"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="https://github.com/Puppyburp"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ./Footer area -->
+
+			<!-- Overlays and menu hover titles -->
+			<div id="fltrs-overlay"></div>
+			<div id="overlay"></div>
+			<div id="page-title">
+				<span class="title"></span>
+				<span class="subtitle"></span>
+			</div>
+	</div>
+	<!-- #/wrapper -->
+
+	<!-- Main scripts -->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

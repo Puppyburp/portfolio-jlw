@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<title>Dev & Design Portfolio</title>
+	
+	<!-- Favicon -->	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<!-- Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Lora:400,400italic,700%7CWork+Sans:200,400,300,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- Main styles -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="portfolio-page fltrs-fx-fade fltrs-scale" data-page="portfolio">
+	<!-- Preloader -->
+	<div id="preloader">
+		<span class="preloader-ani"></span>
+	</div>
+
+	<div id="wrapper">
+		<!-- Head, logo & navigation -->
+		<header id="header" class="container-fluid">
+			<div class="container">
+				<nav class="navbar">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button"><span></span></button>
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img srcset="images/logo@2x.png 2x" src="images/logo.png" width="143" height="45" alt="Jennifer"></a>
+						</div>
+					</div>
+					<!-- Main navigation -->
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="index.html" data-title="Work" data-subtitle="Latest projects">Work</a>
+							</li>
+							<li>
+								<a href="about.html" data-title="About" data-subtitle="A few factoids about me">About</a>
+							</li>
+							<li>
+								<a href="contact.html" data-title="Hello" data-subtitle="Hi there!">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav> <!-- ./Main navigation -->
+			</div>
+		</header>
+
+		<!-- Main content -->
+		<div class="main-container">
+			<main id="main" class="portfolio-page">
+				<!-- Page head/intro title & subtitle -->
+				<div class="container heading-section">
+					<div class="intro big-heading parallax col-sm-12">
+						<h1>Welcome</h1>
+						<p>Glad you're here! Below, you'll find a sampling of <br class="nobr">some of my coding and design projects.</p>
+						<p><em>This site is under construction</em> <i class="fas fa-pencil-ruler"></i></p>
+					</div>
+				</div>
+				<!-- ./Page head/intro title & subtitle -->
+
+				<span id="prtfl-anchor" class="container go"></span>
+				<div class="container portfolio-grid">
+					<div class="row">
+						<div class="col-sm-6">
+							<a class="fltrs-trggr go" href="#prtfl-anchor">
+								<div class="filters-icon">
+						            <div class="icn-wrapper">
+						                <i class="eyecon"></i>
+						                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
+						                    <circle cx="8" cy="8" r="6.215" transform="rotate(90 8 8)"></circle>
+						                </svg>
+						            </div>
+						        </div>
+							</a>
+						</div>
+						<ul class="filter-nav">
+							<!-- you can setup your filter categories in a very easy way -->
+							<!-- just by adding 'data-filter' and your category as value -->
+							<!-- for example: -->
+							<!-- data-filter="branding" -->
+							<li class="active"><a href="#prtfl-anchor" data-filter="all">All</a></li>
+							<li><a href="#prtfl-anchor" data-filter="branding">Branding</a></li>
+							<li><a href="#prtfl-anchor" data-filter="illustration">Illustration</a></li>
+							<li><a href="#prtfl-anchor" data-filter="motion">Motion</a></li>
+							<li><a href="#prtfl-anchor" data-filter="photography">Photography</a></li>
+							<li><a href="#" data-filter="web">Web</a></li>
+						</ul>
+					</div>
+					<!-- Set here the columns number: 'cols-2' is the default value -->
+					<div class="js-ajax-holder projects cols-2">
+						<div class="row portfolio-list js-ajax-container">
+							<!-- 'data-filter' attributes allow you to join the item with the category -->
+							<!-- this category must be the same that previously within 'filter-nav' -->
+							<div class="img-holder prjct-item" data-filter="web-design">
+								<a href="single-project-assistant.html">
+									<img src="images/gotr-website.png" alt="GOTR website screenshot" class="img-responsive" width="672" height="672">
+									<span class="caption">GOTR Website Redesign<span>— web design</span></span>
+								</a>
+							</div>
+							<div class="img-holder prjct-item" data-filter="web-design">
+								<a href="single-project.html">
+									<img src="images/bacon-btn.png" alt="bacon button image" class="img-responsive" width="672" height="448">
+									<span class="caption">Bacon Button (Project)<span>— coding</span></span>
+								</a>
+							</div>
+							<div class="img-holder prjct-item" data-filter="branding">
+								<a href="single-project-titelles.html">
+									<img src="images/nomad-img.png" alt="Nomad app" class="img-responsive" width="672" height="672">
+									<span class="caption">Nomad Application (Project)<span>— coding</span></span>
+								</a>
+							</div>
+							<div class="img-holder prjct-item" data-filter="coding">
+								<a href="single-project-field.html">
+									<img src="images/burger.png" alt="burger image" class="img-responsive" width="672" height="448">
+									<span class="caption">Burger Logger<span>— coding</span></span>
+								</a>
+							</div>
+							
+						</div> <!-- end container div -->
+					</div>
+				</div>
+
+			<!-- Footer area -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-12 text-center">
+							<p>&copy;2020 - Jennifer W.</p>
+							<ul class="list-inline social-networks">
+								<li><a href="https://www.linkedin.com/in/jennifer-walason/"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="https://github.com/Puppyburp"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ./Footer area -->
+		</div>
+		<!-- ./main-container -->
+
+		<!-- Overlays and menu hover titles -->
+		<div id="fltrs-overlay"></div>
+		<div id="overlay"></div>
+		<div id="page-title">
+			<span class="title"></span>
+			<span class="subtitle"></span>
+		</div>
+
+	</div>
+	<!-- #/wrapper -->
+
+	<!-- Main scripts -->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+</body>
+</html>
